@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>,
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <script src="https://kit.fontawesome.com/2bbac3a66c.js" crossorigin="anonymous" ></script>
+</head>
+<body>
+    <form  id="create-account-form" action="result.html" method="GET">
+        
+        <div class="title">
+            <h2>Rent Bicycle</h2>
+            <a href="../index.html">Home page</a>
+        </div>
+        <!-- NAME -->
+        <div class="input-group">
+            <label for="daytime">Pick-up date and time:</label>
+            <input type="datetime-local" id="daytime" name="Pick-up date and time" required>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <!-- PICK-UP -->
+        <div class="input-group">
+            <label for="time">Drop-off date and time:</label>
+            <input type="datetime-local" id="time" name="Drop-off date and time" required>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <!-- DROP-OFF -->
+        <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" name="Customer Name">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <!-- CYCLE NAME -->
+        <div class="input-group">
+            <label for="cycle">Cycle Name</label>
+            <input type="" id="cycle" placeholder="Cycle name (Ex: Roads Cycle, Mountain Cycle...)" name="Cycle Name">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <!-- EMAIL -->
+        <div class="input-group">
+            <label for="Email">Email</label>
+            <input type="Email" id="Email" placeholder="Email" name="Email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <!-- QUANTITY -->
+        <div class="input-group">
+            <label for="number">Quantity</label>
+            <input type="number" id="number" placeholder="How many cycle you want to rent?" name="Quantity" required>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <!-- PAYMENT -->
+        <div class="input-group">
+            <label for="payment">Payment ($)</label>
+            <input type="number" id="payment" placeholder="Enter the amount (4, 28, 100)" name="Payment" required>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!-- 
+
+    <i class="fas fa-check-circle"></i>
+    <i class="fas fa-exclamation-circle"></i>
+
+ -->
